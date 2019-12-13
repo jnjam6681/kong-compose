@@ -1,0 +1,17 @@
+# volumes driver
+VOLUMES_DRIVER=local
+
+# networks driver
+NETWORKS_DRIVER=bridge
+
+# postgres
+POSTGRES_IMAGE=postgres:9.6
+POSTGRES_DB=kong
+POSTGRES_USER=kong
+POSTGRES_PASSWORD=kong
+
+# kong
+KONG_IMAGE=kong:latest
+
+# konga
+TOKEN_SECRET=km1GUr4RkcQD7DewhJPNXrCuZwcKmqjb
