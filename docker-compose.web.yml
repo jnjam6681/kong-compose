@@ -1,0 +1,20 @@
+version: '2.4'
+
+networks:
+  web:
+    driver: bridge
+
+services:
+
+  web-1:
+    image: nginx:latest
+    ports:
+      - "8081:80"
+    networks:
+      - web
+  web-2:
+    image: httpd:latest
+    ports:
+      - "8082:80"
+    networks:
+      - web
